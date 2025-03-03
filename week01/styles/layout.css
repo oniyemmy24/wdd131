@@ -1,6 +1,13 @@
-header {
+body {
     color: darkgrey;
-    display: flex;
+    display: grid;
     justify-content: center;
+    align-items: center;
+}
+nav , a{
+    background-color: steelblue;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-evenly;
     align-items: center;
 }

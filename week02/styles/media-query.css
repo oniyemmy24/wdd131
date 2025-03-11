@@ -15,7 +15,6 @@ main{
     grid-template-columns: 1fr;
     grid-gap: 1rem;
 }
-
 section{
     padding: 1rem;
     background-color: #f2f2f5;

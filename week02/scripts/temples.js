@@ -16,3 +16,13 @@ const navMenu = document.getElementById("nav-menu");
 menuButton.addEventListener("click", () => {
     navMenu.style.display = navMenu.style.display === "flex" ? "none" : "flex";
 });
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.getElementById("menu-button");
+    const navMenu = document.getElementById("nav-menu");
+
+    menuButton.addEventListener("click", function () {
+        navMenu.classList.toggle("show");
+        // Toggle between hamburger icon and 'X' when clicked
+        menuButton.innerHTML = navMenu.classList.contains("show") ? "&#10006;" : "&#9776;";
+    });
+});

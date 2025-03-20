@@ -16,6 +16,7 @@ const navMenu = document.getElementById("nav-menu");
 menuButton.addEventListener("click", () => {
     navMenu.style.display = navMenu.style.display === "flex" ? "none" : "flex";
 });
+
 document.addEventListener("DOMContentLoaded", function () {
     const menuToggle = document.getElementById("menu-button");
     const navMenu = document.getElementById("nav-menu");

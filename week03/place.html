@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Page</title>
+    <meta name="description"
+    content="WDD 131 - Dynamic Web Fundamentals by Oluwayemi Oni, Place Page">
+    <meta name="author" content="Oluwayemi Oni">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans+Georgian:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/place.css">
+    <link rel="stylesheet" href="./styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Nigeria, West Africa<span></span></h1>
+    </header>
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="./images/hero-large.webp" media="(max-width: 768px)">
+                <source srcset="./images/hero-medium.webp" media="(max-width: 1024px)">
+                <img src="./images/hero-small.webp" alt="FCT Gate">
+            </picture>
+        </section>
+        <section class="data">
+            <h2>Data</h2>
+            <p>Area: <span>923,769 sq km</span></p>
+            <p>Population: <span>230 million</span></p>
+            <p>Capital: <span>Abuja</span></p>
+            <p>Languages: <span>Yoruba, Igbo, Hausa and the minorities</span></p>
+            <p>Currency: <span>Naira</span></p>
+            <p>Time Zone: <span>WAT</span></p>
+            <p>Calling Code: <span>+234</span></p>
+            <p>Internet TLD: <span>.ng</span></p>
+        </section>
+        <section class="weather">
+            <h2>Weather <span class="weather-icon">⛅</span></h2>
+            <p>Temperature: <span id="temperature">8</span>°C</p>
+            <p>Condition: <span id="condition">Partly Cloudy</span></p>
+            <p>Wind: <span id="wind">10</span> km/h</p>
+            <p>Wind Chill: <span id="windChill">N/A</span></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> 🌸 Oluwayemi Oni 🌸 Nigeria</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

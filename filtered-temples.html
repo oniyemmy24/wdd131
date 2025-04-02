@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Temple Album</title>
+        <meta name="description" content= "This is a little description of an app that allows users to view the picture album page that is responsive in small and larger views.">
+        <meta name="author" content="Oluwayemi Oni">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstati.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/filtered-temples.css">
+        <link rel="stylesheet" href="styles/filtered-temples-larger.css">
+        <script src="scripts/filtered-temples.js" defer></script>
+    </head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <nav>
+            <button id="menu-btn">&#9776;</button>
+            <div id="nav-links">
+                <a href="#" data-filter="all">Home</a>
+                <a href="#" data-filter="old">Old</a>
+                <a href="#" data-filter="new">New</a>
+                <a href="#" data-filter="large">Large</a>
+                <a href="#" data-filter="small">Small</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h2>Home</h2>
+        <section id="temple-gallery">
+        </section>
+    </main>
+
+
+        <footer>
+            <p>&copy; <span id="year"></span> 🌸 Oluwayemi Oni 🌸 Nigeria</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </footer>
+    </body>
+</html>
+

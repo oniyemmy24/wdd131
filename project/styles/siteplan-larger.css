@@ -1,0 +1,48 @@
+/* Large screen (desktop) styles */
+@media (min-width: 768px) {
+    body {
+      font-size: 18px;
+    }
+  
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      padding: 3rem;
+    }
+  
+    section {
+      background-color: #ffffffcc; /* subtle white background */
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+  
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem 3rem;
+    }
+  
+    header h1 {
+      font-size: 2.5rem;
+    }
+  
+    footer {
+      padding: 2rem;
+      font-size: 1rem;
+    }
+  
+    #wireframe {
+      grid-column: 1 / -1; /* full width for wireframe section */
+      text-align: center;
+    }
+  
+    #wireframe img {
+      margin: 1rem;
+    }
+  }
+  

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Page</title>
+    <meta name="description"content="Build an HTML form with a confirmation page">
+    <meta name="author" content="Oluwayemi Oni">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans+Georgian:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/form.css">
+    <link rel="stylesheet" href="/styles/form-larger.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Product Review</h1>
+  </header>
+
+  <main>
+    <form action="review.html" method="get">
+      <!-- Product Name -->
+      <label for="productName">Product Name</label>
+      <select id="productName" name="productName" required>
+        <option value="" disabled selected>Choose a Product ...</option>
+      </select>
+
+      <!-- Overall Rating -->
+      <fieldset>
+        <legend>Overall Rating</legend>
+        <label><input type="radio" name="rating" value="1" required /> ★</label>
+        <label><input type="radio" name="rating" value="2" /> ★★</label>
+        <label><input type="radio" name="rating" value="3" /> ★★★</label>
+        <label><input type="radio" name="rating" value="4" /> ★★★★</label>
+        <label><input type="radio" name="rating" value="5" /> ★★★★★</label>
+      </fieldset>
+
+      <!-- Date of Installation -->
+      <label for="installDate">Date of Installation</label>
+      <input type="date" id="installDate" name="installDate" required />
+
+      <!-- Useful Features -->
+      <fieldset>
+        <legend>Which features did you find useful in the product?<br><em>(Check all that apply)</em></legend>
+        <label><input type="checkbox" id="durability" name="features" value="Durability" /> Durability</label>
+        <label><input type="checkbox" id="ease" name="features" value="Ease of Use" /> Ease of Use</label>
+        <label><input type="checkbox" id="performance" name="features" value="Performance" /> Performance</label>
+        <label><input type="checkbox" id="design" name="features" value="Design" /> Design</label>
+      </fieldset>
+
+      <!-- Written Review -->
+      <label for="writtenReview">Written Review <span>(Optional)</span></label>
+      <textarea id="writtenReview" name="writtenReview" rows="4" cols="30"></textarea>
+
+      <!-- Name -->
+      <label for="username">Your Name <span>(Optional)</span></label>
+      <input type="text" id="username" name="username" />
+
+      <!-- Submit -->
+      <input type="submit" value="Post Review" />
+    </form>
+    <section id="confirmationMessage">
+        <p><strong>Your review has been submitted successfully.</strong></p>
+        <p><span id="counterMessage"></span></p>
+        <h3>Review Summary:</h3>
+        <ul id="reviewSummary"></ul>
+      </section>
+  </main>
+  <footer>
+    <p>&copy; <span id="year"></span> 🌸 Oluwayemi Oni 🌸 Nigeria</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
